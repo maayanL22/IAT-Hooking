@@ -132,6 +132,5 @@ int hook(PCSTR func_to_hook, PCSTR DLL_to_hook, DWORD new_func_address) {
 
 void ShowMsg() {
 	MessageBoxA(0, "Hooked", "I Love Assembly", 0);
-	printf("sorry :(\n");
-	
+	printf("sorry :(\n");	
 }
