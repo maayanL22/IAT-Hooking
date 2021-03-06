@@ -132,5 +132,8 @@ int hook(PCSTR func_to_hook, PCSTR DLL_to_hook, DWORD new_func_address) {
 
 void ShowMsg() {
 	MessageBoxA(0, "Hooked", "I Love Assembly", 0);
-	printf("sorry :(\n");	
+	printf("sorry :(\n");
+	// instead of the print should be value recovery and and releasing the stack memory so the process can then run as supposed to after the hooking
+	// and then jumping to the address of the hooked function (in this case CreateFileA, use disassembler to see this info) - all of this is written in assembly (inline assembly)
+	
 }
